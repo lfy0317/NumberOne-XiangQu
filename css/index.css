@@ -84,6 +84,57 @@ h1, h2, h3, h4, h5, h6 {
         background: #000;
         overflow: hidden;
         padding: 2px;
-        display: none; }
+        display: none;
+        z-index: 1; }
         #topWrap .top ul .top-ul-li-last .top-ul-li-last-div img {
           width: 100%; }
+
+/*制作导航条*/
+.active, .change {
+  border-bottom: 3px solid #000; }
+
+#navWrap {
+  width: 100%;
+  height: 60px; }
+  #navWrap .nav {
+    width: 980px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px; }
+    #navWrap .nav ul {
+      float: left; }
+      #navWrap .nav ul li {
+        float: left; }
+        #navWrap .nav ul li a {
+          font-size: 16px;
+          color: #020202;
+          padding: 7px;
+          margin-right: 22px; }
+        #navWrap .nav ul li i {
+          font-size: 4px !important;
+          color: #201e1f;
+          margin-right: 18px; }
+    #navWrap .nav form {
+      width: 330px;
+      float: right;
+      position: relative;
+      margin-top: 15px; }
+      #navWrap .nav form #searchTxt {
+        width: 282px;
+        height: 28px;
+        float: left;
+        border: 1px solid #e4e4e4;
+        color: #e9e9eb;
+        text-indent: 5px; }
+      #navWrap .nav form #searchBtn {
+        width: 43px;
+        height: 30px;
+        background: #000;
+        float: right;
+        border: none; }
+      #navWrap .nav form i {
+        position: absolute;
+        top: -15px;
+        right: 11px;
+        color: #d2d2d2;
+        font-size: 20px !important; }

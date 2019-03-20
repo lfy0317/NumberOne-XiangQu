@@ -12,11 +12,12 @@ body{font-size:12px;font-family:"宋体","Arial Narrow",HELVETICA;}
 h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
 .clear_fix:after{content:'.';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
 
+$WidthWrap : 100%;
 $Width : 980px;
 
 /*制作logo及登录注册*/
 #topWrap{
-    width: 100%;
+    width: $WidthWrap;
     height: 45px;
     background: #000;
     .top{
@@ -66,6 +67,7 @@ $Width : 980px;
                     overflow: hidden;
                     padding: 2px;
                     display: none;
+                    z-index: 1;
                     img{
                         width: 100%;
                     }
@@ -74,4 +76,65 @@ $Width : 980px;
         }
     }
 }
-
+/*制作导航条*/
+.active,.change{
+    border-bottom: 3px solid #000;
+}
+#navWrap{
+    width: $WidthWrap;
+    height: 60px;
+    .nav{
+        width: $Width;
+        height: 60px;
+        margin: 0 auto;
+        line-height: 60px;
+        ul{
+            float: left;
+            li{
+                float: left;
+                a{
+                    font-size: 16px;    
+                    color: #020202;
+                    padding: 7px;
+                    margin-right: 22px;
+                }
+//              .nav-ul-li-a-first{
+//                  border-bottom: 3px solid #000;
+//              }
+                i{
+                    font-size: 4px !important;
+                    color: #201e1f;
+                    margin-right: 18px;
+                }
+            }
+        }
+        form{
+            width: 330px;
+            float: right;
+            position: relative;
+            margin-top: 15px;
+            #searchTxt{
+                width: 282px;
+                height: 28px;
+                float: left;
+                border: 1px solid #e4e4e4;
+                color: #e9e9eb;
+                text-indent: 5px;
+            }
+            #searchBtn{
+                width: 43px;
+                height: 30px;
+                background: #000;
+                float: right;
+                border: none;
+            }
+            i{
+                position: absolute;
+                top: -15px;
+                right: 11px;
+                color: #d2d2d2;
+                font-size: 20px !important;
+            } 
+        }
+    }
+}
