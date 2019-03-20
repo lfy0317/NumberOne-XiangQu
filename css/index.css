@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/*公共样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, figure, legend, img, input {
+  margin: 0;
+  padding: 0; }
+
+i, em {
+  font-style: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+u, a {
+  text-decoration: none; }
+
+input, a {
+  outline: none; }
+
+/*点击聚焦出现的外边框去掉*/
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: none; }
+
+img {
+  vertical-align: middle; }
+
+body {
+  font-size: 12px;
+  font-family: "宋体","Arial Narrow",HELVETICA; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+.clear_fix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+/*制作logo及登录注册*/
+#topWrap {
+  width: 100%;
+  height: 45px;
+  background: #000; }
+  #topWrap .top {
+    width: 980px;
+    height: 45px;
+    margin: 0 auto; }
+    #topWrap .top h1 {
+      line-height: 45px;
+      float: left; }
+    #topWrap .top ul {
+      float: right;
+      position: relative; }
+      #topWrap .top ul li {
+        float: left;
+        color: #213220; }
+        #topWrap .top ul li a {
+          padding: 0 16px;
+          line-height: 45px;
+          color: #d4cbd0; }
+          #topWrap .top ul li a:hover {
+            color: #fff; }
+          #topWrap .top ul li a i {
+            font-size: 9px !important; }
+        #topWrap .top ul li .top-ul-li-a-first {
+          display: none; }
+        #topWrap .top ul li .top-ul-li-a-3 {
+          color: #efcd38; }
+        #topWrap .top ul li .top-ul-li-a-last {
+          padding-right: 21px;
+          line-height: 43px; }
+      #topWrap .top ul .top-ul-li-last .top-ul-li-last-div {
+        position: absolute;
+        top: 43px;
+        right: 0;
+        width: 120px;
+        height: 120px;
+        background: #000;
+        overflow: hidden;
+        padding: 2px;
+        display: none; }
+        #topWrap .top ul .top-ul-li-last .top-ul-li-last-div img {
+          width: 100%; }
