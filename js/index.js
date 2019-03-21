@@ -21,7 +21,7 @@ function navHover(){
 		$(this).addClass('change').parent().siblings().children('a').removeClass('change')
 	});
 	$('#navWrap .nav ul li a').mouseleave(function(){
-		$(this).removeClass('active')
+		$(this).not('#navWrap .nav ul li:nth-child(1) a').removeClass('active')
 	})
 }
 navHover();

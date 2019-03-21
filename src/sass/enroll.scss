@@ -1,0 +1,79 @@
+@charset 'utf-8';
+@import '_common';
+/*注册页面*/
+body{
+    width: $WidthWrap;
+    height: 100%;
+    background-image: url(../img/enroll-enter-bg.bmp);
+    #enrollTypeArea{
+        width: $Width;
+        margin: 0 auto;
+        h1{
+            margin: 36px 0 36px 50px;
+        }
+        #enrollLogin{
+            width: 978px;
+            height: 393px;
+            border: 1px solid #dbdbdb;
+            background: #fff;
+            form{
+                height: 100%;
+                width: 350px;
+                margin: 0 auto;
+            }
+            legend{
+                text-align: center;
+                height: 73px;
+                line-height: 73px;
+            }
+            p{
+                color: #d3d3d3;
+                input{
+                    width: 312px;
+                    height: 46px;
+                    line-height: 34px;
+                    border: 1px solid #c0c0c0;
+                    margin-bottom: 10px;
+                    border-radius: 4px;
+                    padding-left: 36px;
+                }
+                #enrollUserName{
+                    background: url(../img/enroll-enter-userName.jpg) no-repeat 10px 17px;
+                }
+                #enrollPassword{
+                    background: url(../img/enroll-enter-password.jpg) no-repeat 10px 17px;
+                }
+            }
+            #enrollReg{
+                width: 350px;
+                height: 34px;
+                color: #FF0000;
+                line-height: 34px;
+            }
+            .login-form-p-last{
+                color: #707070;
+                margin-bottom: 36px;
+                a{
+                    margin-left: 0px;
+                    color: #000;
+                }
+            }
+            #enrollSub{
+                width: 350px;
+                height: 50px;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 4px;
+                background: #343434;
+                color: #fff;
+            }
+            a{
+                margin-left: 155px;
+                color: #000;
+                i{
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}

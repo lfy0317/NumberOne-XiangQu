@@ -3,7 +3,37 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/enter.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
 	</head>
 	<body>
+		<!--
+			2019.03.21
+			制作登录页面
+			作者：刘福元
+		-->
+		<div id="enterTypeArea">
+			<h1><a href="index.html"><img src="img/enroll-enter-logo.bmp"/></a></h1>
+			<div id="enterLogin">
+				<div class="enter-login-left">
+					<a href="index.html"><img src="img/enter-login-left.bmp"/></a>
+				</div>
+				<form action="" method="get">
+					<h2>账户登录</h2>
+					<legend class="enterLogin-form-legend-first">使用想去账号登录</legend>
+					<p><input type="text" name="" id="enterUserName" value="" placeholder="请输入手机号或邮箱"/></p>
+					<p><input type="password" name="" id="enterPassword" value="" placeholder="请输入密码"/></p>
+					<p id="enterReg"><a href="#">忘记密码》</a></p>
+					<input type="button" value="登录" id="enterBtn"/>
+					<legend class="enterLogin-form-legend-last">使用社交账号登录</legend>
+					<p class="centerLogin-form-p-last-2">
+						<a href="#" class="iconfont">&#xe6c4;</a>
+						<a href="#" class="iconfont">&#xe664;</a>
+						<a href="#" class="iconfont">&#xe698;</a>
+					</p>
+					<p class="centerLogin-form-p-last-1">还没有账号？<a href="enroll.html">立即注册》</a></p>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

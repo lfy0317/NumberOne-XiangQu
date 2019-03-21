@@ -1,3 +1,35 @@
 @charset 'utf-8';
+@import '_common';
 @import '_public';
-
+/*制作轮播*/
+#carouselWrap{
+    width: $WidthWrap;
+    height: 360px;
+    background: #ddd;
+    #carousel{
+        width: $Width;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .carouselLeft{
+        width: 770px;
+        height: 100%;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        ul{
+            height: 358px;
+            width: 5000px;
+            border-bottom: 2px solid #e7e7e7;
+            position: absolute;
+            li{
+                float: left; 
+            } 
+        }
+    }
+    .carouselRight{
+        width: 205px;
+        float: right;
+        border-left: 5px solid #751b37;
+    }
+}

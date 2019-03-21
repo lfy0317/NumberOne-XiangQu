@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*公共样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, figure, legend, img, input {
+  margin: 0;
+  padding: 0; }
+
+i, em {
+  font-style: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+u, a {
+  text-decoration: none; }
+
+input, a {
+  outline: none; }
+
+/*点击聚焦出现的外边框去掉*/
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: none; }
+
+img {
+  vertical-align: middle; }
+
+body {
+  font-size: 12px;
+  font-family: "宋体","Arial Narrow",HELVETICA; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+.clear_fix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+/*制作登录页面*/
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/enroll-enter-bg.bmp); }
+  body #enterTypeArea {
+    width: 980px;
+    margin: 0 auto; }
+    body #enterTypeArea h1 {
+      margin: 36px 0 36px 50px; }
+    body #enterTypeArea #enterLogin {
+      width: 980px;
+      height: 450px; }
+      body #enterTypeArea #enterLogin .enter-login-left {
+        float: left; }
+      body #enterTypeArea #enterLogin form {
+        float: left;
+        width: 370px;
+        height: 448px;
+        border: 1px solid #d8d8d8;
+        background: #fff;
+        padding-left: 22px;
+        position: relative; }
+        body #enterTypeArea #enterLogin form h2 {
+          width: 350px;
+          height: 78px;
+          border-bottom: 1px solid #ededed;
+          text-align: center;
+          line-height: 78px;
+          margin-bottom: 17px; }
+        body #enterTypeArea #enterLogin form .enterLogin-form-legend-first {
+          width: 170px;
+          text-align: center;
+          position: absolute;
+          top: 73px;
+          left: 110px;
+          background: #fff;
+          color: #ededed; }
+        body #enterTypeArea #enterLogin form p input {
+          width: 312px;
+          height: 45px;
+          border: 1px solid #c0c0c0;
+          margin-bottom: 10px;
+          border-radius: 4px;
+          padding-left: 36px; }
+        body #enterTypeArea #enterLogin form p #enterUserName {
+          background: url(../img/enroll-enter-userName.jpg) no-repeat 10px 17px; }
+        body #enterTypeArea #enterLogin form p #enterPassword {
+          background: url(../img/enroll-enter-password.jpg) no-repeat 10px 17px; }
+        body #enterTypeArea #enterLogin form #enterReg {
+          width: 350px;
+          height: 22px;
+          line-height: 22px;
+          color: #f00; }
+          body #enterTypeArea #enterLogin form #enterReg a {
+            float: right;
+            color: #000; }
+        body #enterTypeArea #enterLogin form #enterBtn {
+          width: 350px;
+          height: 45px;
+          border: none;
+          border-radius: 4px;
+          background: #343434;
+          color: #fff;
+          margin-bottom: 33px; }
+        body #enterTypeArea #enterLogin form .enterLogin-form-legend-last {
+          width: 170px;
+          text-align: center;
+          position: absolute;
+          top: 305px;
+          left: 110px;
+          background: #fff;
+          color: #ededed; }
+        body #enterTypeArea #enterLogin form .centerLogin-form-p-last-2 {
+          width: 350px;
+          height: 60px;
+          border-top: 1px solid #ededed;
+          text-align: center;
+          padding-top: 25px; }
+          body #enterTypeArea #enterLogin form .centerLogin-form-p-last-2 a {
+            font-size: 36px !important; }
+          body #enterTypeArea #enterLogin form .centerLogin-form-p-last-2 a:nth-child(1) {
+            color: #00bf93; }
+          body #enterTypeArea #enterLogin form .centerLogin-form-p-last-2 a:nth-child(2) {
+            color: #f6a700;
+            font-size: 42px !important;
+            margin-top: 5px; }
+          body #enterTypeArea #enterLogin form .centerLogin-form-p-last-2 a:nth-child(3) {
+            color: #5a839f; }
+        body #enterTypeArea #enterLogin form .centerLogin-form-p-last-1 {
+          text-align: center;
+          color: #c3c3c3; }
+          body #enterTypeArea #enterLogin form .centerLogin-form-p-last-1 a {
+            color: #000; }

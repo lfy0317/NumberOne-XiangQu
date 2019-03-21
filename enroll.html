@@ -3,7 +3,32 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/enroll.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
 	</head>
 	<body>
+		<!--
+			2019.03.21
+			注册页
+			作者：刘福元
+		-->
+		<div id="enrollTypeArea">
+			<h1><a href="index.html"><img src="img/enroll-enter-logo.bmp"/></a></h1>
+			<div id="enrollLogin">
+				<form action="" method="get">
+					<legend>账户注册</legend>
+					<p><input type="text" value="" id="enrollUserName" placeholder="请输入手机号"/></p>
+					<p><input type="password" value="" id="enrollPassword" placeholder="请输入密码"/></p>
+					<p>密码由6-20位英文字母、数字或符号组成</p>
+					<p id="enrollReg"></p>
+					<input type="button" value="注册想去" id="enrollSub"/>
+					<p class="login-form-p-last">注册即表示同意<a href="#">《用户使用条款及服务协议》</a></p>
+					<a href="enter.html">登录<i class="iconfont">&#xe663;</i></a>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/enroll.js"></script>
+
