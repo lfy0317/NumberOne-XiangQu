@@ -17,15 +17,61 @@
         position: relative;
         float: left;
         overflow: hidden;
-        ul{
-            height: 358px;
+        #carouselPic{
+            // height: 360px;
             width: 5000px;
-            border-bottom: 2px solid #e7e7e7;
-            position: absolute;
+            // position: absolute;
             li{
-                float: left; 
+                float: left;
             } 
         }
+		@mixin carouselBtn{
+			position: absolute;
+			width: 42px;
+			height: 42px;
+			background: rgba($color: #000000, $alpha: 0.5);
+			border-radius: 50%;
+			top: 159px;
+			text-align: center;
+			line-height: 42px;
+			color: #fff;
+			display: none;
+			@content;
+		}
+		#carouselLeftAFirst{
+			@include carouselBtn;
+		}
+		#carouselLeftALast{
+			@include carouselBtn{
+				right: 0px;
+			}
+		}
+		.carouselPicMix{
+			width: 60px;
+			height: 10px;
+			position: absolute;
+			bottom: 10px;
+			left: 350px;
+			overflow: hidden;
+			#carouselCenterBtn{
+				width: 100px;
+				height: 10px;
+				li{
+					float: left;
+					a{
+						display: block;
+						width: 10px;
+						height: 10px;
+						border-radius: 50%;
+						margin: 0 5px;			
+						background: rgba($color: #000000, $alpha: 0.3);
+					}
+					.carouselCenterBtnchange{
+						background: rgba($color: #000000, $alpha: 0.7);
+					}
+				}
+			}
+		}
     }
     .carouselRight{
         width: 205px;

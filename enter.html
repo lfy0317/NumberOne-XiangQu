@@ -21,19 +21,23 @@
 				<form action="" method="get">
 					<h2>账户登录</h2>
 					<legend class="enterLogin-form-legend-first">使用想去账号登录</legend>
-					<p><input type="text" name="" id="enterUserName" value="" placeholder="请输入手机号或邮箱"/></p>
+					<p><input type="text" name="" id="enterUserName" value="" placeholder="请输入手机号或邮箱" autocomplete="off"/></p>
 					<p><input type="password" name="" id="enterPassword" value="" placeholder="请输入密码"/></p>
-					<p id="enterReg"><a href="#">忘记密码》</a></p>
+					<p id="enterReg"><a href="forgetpassword.html">忘记密码》</a></p>
 					<input type="button" value="登录" id="enterBtn"/>
 					<legend class="enterLogin-form-legend-last">使用社交账号登录</legend>
 					<p class="centerLogin-form-p-last-2">
-						<a href="#" class="iconfont">&#xe6c4;</a>
-						<a href="#" class="iconfont">&#xe664;</a>
-						<a href="#" class="iconfont">&#xe698;</a>
+						<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx720566b06f81b033&redirect_uri=http%3A%2F%2Fwww.xiangqu.com%2Fweixin_login%2F%3FredirectUrl%3Dhttp%3A%2F%2Fwww.xiangqu.com%2F&response_type=code&scope=snsapi_login#wechat_redirect" class="iconfont">&#xe6c4;</a>
+						<a href="https://api.weibo.com/oauth2/authorize?client_id=2707485026&response_type=code&redirect_uri=http%3A%2F%2Fwww.xiangqu.com%2Fweibo_login%2F%3FredirectUrl%3Dhttp%3A%2F%2Fwww.xiangqu.com%2F" class="iconfont">&#xe664;</a>
+						<a href="https://graph.qq.com/oauth2.0/show?which=error&display=pc&error=100010&response_type=code&client_id=100283351&redirect_uri=http%3A%2F%2Fwww.xiangqu.com%2Fqq_login%3FredirectUrl%3Dhttp%3A%2F%2Fwww.xiangqu.com%2F&scope=get_user_info,check_page_fans,get_fanslist,add_share,add_t,add_pic_t,get_info,get_other_info,get_idollist,add_idol,del_idol,get_simple_userinfo&state=javaSdk-code&display=" class="iconfont">&#xe698;</a>
 					</p>
 					<p class="centerLogin-form-p-last-1">还没有账号？<a href="enroll.html">立即注册》</a></p>
+					<a href="#" id="enterHint">此链接不安全。在此页面输入的登录信息可以被窃取。详细了解</a>
 				</form>
 			</div>
 		</div>
 	</body>
 </html>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/enter.js"></script>

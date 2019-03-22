@@ -114,6 +114,20 @@ body{
                         color: #000;
                     }
                 }
+				#enterHint{
+					position: absolute;
+					width: 264px;
+					height: 33px;
+					border: 1px solid #a0a0a0;
+					background: url(./../img/enroll-hint.png) no-repeat #ededed 2px 12px;
+					padding: 6px 18px 0px 21px;
+					top: 142px;
+					// 199px
+					left: 59px;
+					margin-left: 0;
+					color: #000;
+					display: none;
+				}
             }
         }
     }

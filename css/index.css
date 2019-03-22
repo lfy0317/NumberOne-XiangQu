@@ -155,13 +155,54 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     float: left;
     overflow: hidden; }
-    #carouselWrap .carouselLeft ul {
-      height: 358px;
-      width: 5000px;
-      border-bottom: 2px solid #e7e7e7;
-      position: absolute; }
-      #carouselWrap .carouselLeft ul li {
+    #carouselWrap .carouselLeft #carouselPic {
+      width: 5000px; }
+      #carouselWrap .carouselLeft #carouselPic li {
         float: left; }
+    #carouselWrap .carouselLeft #carouselLeftAFirst {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      top: 159px;
+      text-align: center;
+      line-height: 42px;
+      color: #fff;
+      display: none; }
+    #carouselWrap .carouselLeft #carouselLeftALast {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      top: 159px;
+      text-align: center;
+      line-height: 42px;
+      color: #fff;
+      display: none;
+      right: 0px; }
+    #carouselWrap .carouselLeft .carouselPicMix {
+      width: 60px;
+      height: 10px;
+      position: absolute;
+      bottom: 10px;
+      left: 350px;
+      overflow: hidden; }
+      #carouselWrap .carouselLeft .carouselPicMix #carouselCenterBtn {
+        width: 100px;
+        height: 10px; }
+        #carouselWrap .carouselLeft .carouselPicMix #carouselCenterBtn li {
+          float: left; }
+          #carouselWrap .carouselLeft .carouselPicMix #carouselCenterBtn li a {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background: rgba(0, 0, 0, 0.3); }
+          #carouselWrap .carouselLeft .carouselPicMix #carouselCenterBtn li .carouselCenterBtnchange {
+            background: rgba(0, 0, 0, 0.7); }
   #carouselWrap .carouselRight {
     width: 205px;
     float: right;

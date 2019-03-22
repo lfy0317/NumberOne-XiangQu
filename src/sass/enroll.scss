@@ -20,59 +20,76 @@ body{
                 height: 100%;
                 width: 350px;
                 margin: 0 auto;
-            }
-            legend{
-                text-align: center;
-                height: 73px;
-                line-height: 73px;
-            }
-            p{
-                color: #d3d3d3;
-                input{
-                    width: 312px;
-                    height: 46px;
-                    line-height: 34px;
-                    border: 1px solid #c0c0c0;
-                    margin-bottom: 10px;
-                    border-radius: 4px;
-                    padding-left: 36px;
-                }
-                #enrollUserName{
-                    background: url(../img/enroll-enter-userName.jpg) no-repeat 10px 17px;
-                }
-                #enrollPassword{
-                    background: url(../img/enroll-enter-password.jpg) no-repeat 10px 17px;
-                }
-            }
-            #enrollReg{
-                width: 350px;
-                height: 34px;
-                color: #FF0000;
-                line-height: 34px;
-            }
-            .login-form-p-last{
-                color: #707070;
-                margin-bottom: 36px;
-                a{
-                    margin-left: 0px;
-                    color: #000;
-                }
-            }
-            #enrollSub{
-                width: 350px;
-                height: 50px;
-                margin-bottom: 10px;
-                border: none;
-                border-radius: 4px;
-                background: #343434;
-                color: #fff;
-            }
-            a{
-                margin-left: 155px;
-                color: #000;
-                i{
-                    font-size: 12px !important;
-                }
+				position: relative;
+				legend{
+				    text-align: center;
+				    height: 73px;
+				    line-height: 73px;
+				}
+				p{
+				    color: #d3d3d3;
+				    input{
+				        width: 312px;
+				        height: 46px;
+				        line-height: 34px;
+				        border: 1px solid #c0c0c0;
+				        margin-bottom: 10px;
+				        border-radius: 4px;
+				        padding-left: 36px;
+				    }
+				    #enrollUserName{
+				        background: url(../img/enroll-enter-userName.jpg) no-repeat 10px 17px;
+				    }
+				    #enrollPassword{
+				        background: url(../img/enroll-enter-password.jpg) no-repeat 10px 17px;
+				    }
+				}
+				#enrollReg{
+				    width: 350px;
+				    height: 34px;
+				    color: #FF0000;
+				    line-height: 34px;
+				}
+				.login-form-p-last{
+				    color: #707070;
+				    margin-bottom: 36px;
+				    a{
+				        margin-left: 0px;
+				        color: #000;
+						&:hover{
+							text-decoration: underline;
+						}
+				    }
+				}
+				#enrollSub{
+				    width: 350px;
+				    height: 50px;
+				    margin-bottom: 10px;
+				    border: none;
+				    border-radius: 4px;
+				    background: #343434;
+				    color: #fff;
+				}
+				a{
+				    margin-left: 155px;
+				    color: #000;
+				    i{
+				        font-size: 12px !important;
+				    }
+				}
+				#enrollHint{
+					position: absolute;
+					width: 264px;
+					height: 33px;
+					border: 1px solid #a0a0a0;
+					background: url(./../img/enroll-hint.png) no-repeat #ededed 2px 12px;
+					padding: 6px 18px 0px 21px;
+					top: 120px;
+					// 178px
+					left: 37px;
+					margin-left: 0;
+					display: none;
+				}
             }
         }
     }
