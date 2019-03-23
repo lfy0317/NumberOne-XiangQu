@@ -40,12 +40,15 @@ searchTxtFocus();
 function carousel(){
 	$.getJSON('./json/index.json',function(msg){
 		var str = "";
+		var strRight = `<a href="#"><img src="img/${msg.carouselRight}"/></a>
+						<div class="carousel-right-mark"></div>`;
 		for(var i in msg){
 			for(var j = 0,len = msg.carousel.length;j < len;j++){
-				str += `<li><a href="#"><img src="img/${msg.carousel[j]}"/></a></li>`;
+				str += `<li><a href="#"><img src="img/${msg.carousel[j]}" id="carousel-right-img"/></a></li>`;
 			}
 		}
 		$("#carouselPic").html(str);
+		$(".carousel-right").html(strRight);
 	});
 	$("#carouselPic").mouseover(function(){
 		carouselLeftAShow();
@@ -78,7 +81,6 @@ function carousel(){
 		$('#carouselCenterBtn li:nth-child(3) a').addClass('carouselCenterBtnchange');
 		$('#carouselCenterBtn li:nth-child(2) a').removeClass('carouselCenterBtnchange');
 	};
-	
 	$('#carouselLeftAFirst').click(function(){
 		carouselSportPrev();
 	});
@@ -114,5 +116,64 @@ function carousel(){
 	$('#carouselPic').mouseout(function(){
 		startSetInterval();
 	});
+	$('.carousel-right').mouseover(function(){
+		$('.carousel-right-mark').css('background','rgba(0,0,0,0.1)')
+	});
+	$('.carousel-right').mouseout(function(){
+		$('.carousel-right-mark').css('background','')
+	});
 }
 carousel();
+/*大家喜欢版块2019.03.23*/
+function likeCases(){
+	$.getJSON('./json/index.json',function(msg){
+		var str1 = '';
+		var str2 = msg.likecase;
+		// var g = 0;
+		for(var key in str2){
+			var str3 = str2[key];
+			str1 += `<li>
+						<div id="likeCase">
+							<a href="#"><img src="img/${str3.headportrait}" alt=""></a>
+							<h3><em>${str3.username}</em></h3>
+							<p>
+								<span id="likeTimes">${str3.liketime}分钟前</span>
+								<i class="iconfont">&#xe506;</i>喜欢了
+								<em id="likeNumber">${str3.likenum}</em>商品
+							</p>
+							<ul>
+								<li><a href="#" id="likeImgNum"><img src="img/${str3.commodity}" alt=""></a></li>
+							</ul>
+						</div>
+					</li>`;
+			// g++;
+		}
+		// console.log(g);
+		$('#likeCenter').html(str1);
+	});
+// 	function dashedAClick(){
+// 		$('#dashedRightA').click(function(){
+// 			var g = 0;
+// 			g -= 875;
+// 			sport($('#likeCenter')[0],{"left" : g})
+// 		})
+// 	}
+// 	dashedAClick();
+}
+likeCases();
+/*设计师版块2019.03.23*/
+function stylistCases(){
+	$.getJSON('./json/index.json',function(msg){
+		var str1 = '';
+		var str2 = msg.stylist;
+		for(var key in str2){
+			var str3 = str2[key];
+			str1 += `<dl>
+						<dt><a href="#"><img src="img/${str3.stylistpic}" alt=""></a></dt>
+						<dd><a href="#">${str3.stylisttxt}</a></dd>
+					</dl>`;
+		}
+		$('.stylist-cases').html(str1);
+	});
+}
+stylistCases();

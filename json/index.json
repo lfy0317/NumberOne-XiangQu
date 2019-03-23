@@ -1,3 +1,47 @@
 {
-	"carousel" : ["banner1.bmp","banner2.bmp","banner3.bmp","banner4.bmp","banner5.bmp"]
+	"carousel" : ["banner1.bmp","banner2.bmp","banner3.bmp","banner4.bmp","banner5.bmp"],
+	"carouselRight" : "bannerRight.bmp",
+	"likecase" : {
+		"likecase1" : {
+			"headportrait" : "head-portrait-one.bmp","username" : "许羊羊","liketime" : 4,"likenum" : 2,"commodity" : "like-one-1.bmp"
+		},
+		"likecase2" : {
+			"headportrait" : "head-portrait-two.bmp","username" : "山旮旯","liketime" : 8,"likenum" : 15,"commodity" : "like-two-1.bmp"
+		},
+		"likecase3" : {
+			"headportrait" : "head-portrait-three.bmp","username" : "WXY","liketime" : 10,"likenum" : 8,"commodity" : "like-three-1.bmp"
+		},
+		"likecase4" : {
+			"headportrait" : "head-portrait-four.bmp","username" : "臧小白","liketime" : 16,"likenum" : 1,"commodity" : "like-four-1.bmp"
+		},
+		"likecase5" : {
+			"headportrait" : "head-portrait-five.bmp","username" : "柒年柒瑾","liketime" : 20,"likenum" : 4,"commodity" : "like-five-1.bmp"
+		},
+		"likecase6" : {
+			"headportrait" : "head-portrait-two.bmp","username" : "落落清欢","liketime" : 35,"likenum" : 9,"commodity" : "like-two-2.bmp"
+		},
+		"likecase7" : {
+			"headportrait" : "head-portrait-three.bmp","username" : "啦啦啦","liketime" : 40,"likenum" : 10,"commodity" : "like-three-2.bmp"
+		},
+		"likecase8" : {
+			"headportrait" : "head-portrait-four.bmp","username" : "想去菌9wvc2s","liketime" : 45,"likenum" : 5,"commodity" : "like-four-2.bmp"
+		},
+		"likecase9" : {
+			"headportrait" : "head-portrait-three.bmp","username" : "氦丶","liketime" : 52,"likenum" : 6,"commodity" : "like-three-3.bmp"
+		},
+		"likecase10" : {
+			"headportrait" : "head-portrait-four.bmp","username" : "·树·","liketime" : 59,"likenum" : 2,"commodity" : "like-four-3.bmp"
+		}
+	},
+	"stylist" : {
+		"stylistcase1" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase2" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase3" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase4" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase5" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase6" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase7" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase8" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase9" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"}
+	}
 }
