@@ -129,7 +129,6 @@ function likeCases(){
 	$.getJSON('./json/index.json',function(msg){
 		var str1 = '';
 		var str2 = msg.likecase;
-		// var g = 0;
 		for(var key in str2){
 			var str3 = str2[key];
 			str1 += `<li>
@@ -146,19 +145,18 @@ function likeCases(){
 							</ul>
 						</div>
 					</li>`;
-			// g++;
 		}
-		// console.log(g);
 		$('#likeCenter').html(str1);
 	});
-// 	function dashedAClick(){
-// 		$('#dashedRightA').click(function(){
-// 			var g = 0;
-// 			g -= 875;
-// 			sport($('#likeCenter')[0],{"left" : g})
-// 		})
-// 	}
-// 	dashedAClick();
+	$('#likeCaseLeft').on({
+		"mouseover" : function(){
+			$("#likeCaseLeftI").animate({"marginLeft" : "50px"});
+		},
+		"mouseleave" : function(){
+			$("#likeCaseLeftI").animate({"marginLeft" : "0px"});
+		}
+	})
+	
 }
 likeCases();
 /*设计师版块2019.03.23*/
@@ -177,3 +175,25 @@ function stylistCases(){
 	});
 }
 stylistCases();
+/*手工艺人版块2019.03.25*/
+function handicraftCases(){
+	$.getJSON('./json/index.json',function(msg){
+		var str1 = '';
+		var str2 = msg.handicraft;
+		for(var key in str2){
+			var str3 = str2[key];
+			str1 += `<dl id="handicraft-case-four">
+						<dt>
+							<a href="#"><img src="img/${str3.handicraftpic}" alt=""></a>
+							<a href="#" class="handicraft-img"><img src="img/${str3.handicraftimg}" alt=""></a>
+						</dt>
+						<dd>
+							<a href="#">${str3.handicrafttxt}<em><span>${str3.handicraftnum}</span>人关注</em></a>
+							<i class="iconfont">&#xe61e;</i>
+						</dd>
+					</dl>`;
+		}
+		$('.handicraft-cases').html(str1);
+	});
+}
+handicraftCases();

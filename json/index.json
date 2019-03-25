@@ -34,14 +34,58 @@
 		}
 	},
 	"stylist" : {
-		"stylistcase1" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase2" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase3" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase4" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase5" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase6" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase7" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase8" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"},
-		"stylistcase9" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "莫格猫"}
+		"stylistcase1" : {"stylistpic" : "stylist-pic-1.bmp","stylisttxt" : "三巷"},
+		"stylistcase2" : {"stylistpic" : "stylist-pic-2.bmp","stylisttxt" : "古良皮具工作室"},
+		"stylistcase3" : {"stylistpic" : "stylist-pic-3.bmp","stylisttxt" : "楷诗陈独立设计师女装"},
+		"stylistcase4" : {"stylistpic" : "stylist-pic-4.bmp","stylisttxt" : "漫与手工生活"},
+		"stylistcase5" : {"stylistpic" : "stylist-pic-5.bmp","stylisttxt" : "莫格猫"},
+		"stylistcase6" : {"stylistpic" : "stylist-pic-6.bmp","stylisttxt" : "Marcm.th"},
+		"stylistcase7" : {"stylistpic" : "stylist-pic-7.bmp","stylisttxt" : "立里Lil"},
+		"stylistcase8" : {"stylistpic" : "stylist-pic-8.bmp","stylisttxt" : "enson9安森玖"},
+		"stylistcase9" : {"stylistpic" : "stylist-pic-9.bmp","stylisttxt" : "新叶集"}
+	},
+	"handicraft" : {
+		"handicraftcase1" : {
+			"handicraftimg" : "handicraft-img-1.bmp",
+			"handicraftpic" : "handicraft-pic-1.bmp",
+			"handicrafttxt" : "青古木器",
+			"handicraftnum" : "1071"
+		},
+		"handicraftcase2" : {
+			"handicraftimg" : "handicraft-img-2.bmp",
+			"handicraftpic" : "handicraft-pic-2.bmp",
+			"handicrafttxt" : "SDOKO十豆口",
+			"handicraftnum" : "5114"
+		},
+		"handicraftcase3" : {
+			"handicraftimg" : "handicraft-img-3.bmp",
+			"handicraftpic" : "handicraft-pic-3.bmp",
+			"handicrafttxt" : "素耳手作护肤品",
+			"handicraftnum" : "687"
+		},
+		"handicraftcase4" : {
+			"handicraftimg" : "handicraft-img-4.bmp",
+			"handicraftpic" : "handicraft-pic-4.bmp",
+			"handicrafttxt" : "毅卯.手绘原创设计工...",
+			"handicraftnum" : "1726"
+		},
+		"handicraftcase5" : {
+			"handicraftimg" : "handicraft-img-5.bmp",
+			"handicraftpic" : "handicraft-pic-5.bmp",
+			"handicrafttxt" : "Needlework两针一线",
+			"handicraftnum" : "414"
+		},
+		"handicraftcase6" : {
+			"handicraftimg" : "handicraft-img-1.bmp",
+			"handicraftpic" : "handicraft-pic-6.bmp",
+			"handicrafttxt" : "Little Forest小森林...",
+			"handicraftnum" : "865"
+		},
+		"handicraftcase7" : {
+			"handicraftimg" : "handicraft-img-2.bmp",
+			"handicraftpic" : "handicraft-pic-7.bmp",
+			"handicrafttxt" : "隽永手工",
+			"handicraftnum" : "830"
+		}
 	}
 }

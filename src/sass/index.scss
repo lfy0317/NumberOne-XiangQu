@@ -158,6 +158,9 @@
 							margin-bottom: 10px;
 							img{
 								width: 100%;
+								&:hover{
+									opacity: 0.8;
+								}
 							}
 						}
 						h3{
@@ -195,6 +198,9 @@
 									margin:0;
 									img{
 										width: 100%;
+										&:hover{
+											opacity: 0.8;
+										}
 									}
 								}
 							}
@@ -222,18 +228,39 @@
 					right: 20px;
 				};
 			}
+			#likeCaseLeft{
+				width: 140px;
+				height: 130px;
+				background: url(../img/like-case-left-bg.png) no-repeat #000;
+				background-position: 15px 40px;
+				position: absolute;
+				bottom: 2px;
+				right: 0;
+				color: #fff;
+				padding-top: 140px;
+				line-height: 20px;
+				text-align: center;
+				font-size: 16px;
+				opacity: 0.8;
+				display: none;
+				#likeCaseLeftI{
+					display: block;
+					margin-top: 20px;
+					font-size: 24px;
+				}
+			}
 		}
 	}
 }
 /*设计师品牌版块*/
 #stylistWrap{
 	width: $WidthWrap;
-	height: 256px;
+	height: 525px;
 	#stylist{
 		width: $Width;
 		height: 100%;
 		margin: 0 auto;
-		// background: #ff0;
+		position: relative;
 		h2{
 			height: 55px;
 			line-height: 55px;
@@ -254,6 +281,13 @@
 				border: 1px solid #f4f4f2;
 				margin: 0px 10px 22px 16px;
 				float: left;
+				&:hover img{
+					opacity: 0.8;
+				}
+				&:hover dd{
+					background: #c5c5c5;
+					border-top: #c5c5c5;
+				}
 				dt{
 					padding: 1px 2px 16px 2px;
 					border-bottom: 1px solid #ccc;
@@ -275,19 +309,156 @@
 					color: #3d4548;
 					a{
 						color: #44434b;
+						&:hover{
+							text-decoration: underline;
+						}
 					}
 				}
 			}	
-			.stylist-last{
-					position: absolute;
+		}
+		.stylist-last{
+			position: absolute;
+			display: block;
+			width: 150px;
+			height: 100px;
+			border: 4px solid #010101;
+			border-radius: 50%;
+			text-align: center;
+			padding-top: 50px;
+			top: 304px;
+			left: 800px;
+			color: #000;
+			line-height: 20px;
+			font-size: 16px;
+			&:hover{
+				background: #000;
+				color: #fff;
+			}
+		}
+	}
+}
+/*手工艺人版块*/
+#handicraftWrap{
+	width: $WidthWrap;
+	height: 613px;
+	#handicraft{
+		width: $Width;
+		height: 100%;
+		margin: 0 auto;
+		// background: #ff0;
+		position: relative;
+		h2{
+			height: 39px;
+			line-height: 39px;
+			font-size: 12px;
+			color: #cfd0d2;
+			span{
+				font-size: 16px;
+				color: #060606;
+				padding-left: 12px;
+				padding-right: 20px;
+				border-left: 6px solid #000;
+			}
+		}
+		.handicraft-cases{
+			dl{
+				width: 221px;
+				height: 262px;
+				border: 1px solid #f4f4f2;
+				margin: 8px 11px 22px 11px;
+				float: left;
+				position: relative;
+				&:hover a{
+					opacity: 0.8;
+				}
+				&:hover .handicraft-img{
 					display: block;
-					width: 150px;
-					height: 150px;
-					border: 4px solid #010101;
-					border-radius: 50%;
-					text-align: center;
-					line-height: 150px;
-					background: #000;
+				}
+				&:hover dd{
+					background: #c5c5c5;
+					border-top: #c5c5c5;
+				}
+				dt{
+					padding: 3px;
+					border-bottom: 1px solid #ccc;
+					.handicraft-img{
+						position: absolute;
+						width: 35px;
+						height: 35px;
+						border: 3px solid #d3d3d3;
+						line-height: 0;
+						border-radius: 50%;
+						top: -15px;
+						left: 5px;
+						display: none;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+					a{
+						display: block;
+						width: 214px;
+						height: 214px;
+						line-height: 214px;
+						text-align: center;
+						overflow: hidden;
+						img{
+							max-width:214px;
+							_width:expression(this.width > 214 ? "214px" : this.width);
+							max-height:214px;
+							_height:expression(this.height > 214 ? "214px" : this.height);
+						}
+					}
+				}
+				dd{
+					height: 33px;
+					border-top: 1px solid #e8e8e8;
+					background: #f6f6f6;
+					padding-left: 16px;
+					padding-top: 7px;
+					a{
+						color: #435049;
+						position: relative;
+						font-size: 14px;
+						display: block;
+						width: 150px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						em{
+							display: block;
+							color: #999b9a;
+							font-size: 12px;
+						}
+					}
+					i{
+						position: absolute;
+						right: 10px;
+						top: 230px;
+						font-size: 24px !important;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.handicraft-last{
+			position: absolute;
+			display: block;
+			width: 150px;
+			height: 100px;
+			border: 4px solid #010101;
+			border-radius: 50%;
+			text-align: center;
+			padding-top: 50px;
+			top: 370px;
+			left: 800px;
+			color: #000;
+			line-height: 20px;
+			font-size: 16px;
+			&:hover{
+				color: #fff;
+				background: #000;
 			}
 		}
 	}
