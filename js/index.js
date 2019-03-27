@@ -1,15 +1,27 @@
 /*登录注册*/
-function showQrCode(){
-	$('.top-ul-li-a-last').on({
-		'mouseover' : function(){
-			$('.top-ul-li-last-div').show();
-		},
-		'mouseout' : function(){
-			$('.top-ul-li-last-div').hide();
-		}
+function showEnterEnroll(){
+//	$("#topWrap .top .enter-list li:nth-child(1)").css('display','none');
+//	$("#topWrap .top .enter-list li:nth-child(2)").css('display','none');
+//	$("#topWrap .top .enter-list li:nth-child(3)").css('display','none');
+//	$("#topWrap .top .enter-list li:nth-child(4) a").css('display','none');
+	$('#topWrap .top .enter-list li:nth-child(2) a').mouseenter(function(){
+		$('#topWrap .top .enter-list li .secondary-menu').animate({
+			height : 78
+		});
+		$('#topWrap .top .enter-list li .secondary-menu').css('display','block');
+	});
+	$('#topWrap .top .enter-list li .secondary-menu').mouseenter(function(){
+		$(this).css('display','block');
+	});
+	$('#topWrap .top .enter-list li:nth-child(2) a').mouseout(function(){
+		$('#topWrap .top .enter-list li .secondary-menu').animate({
+			height : 0
+		});
+		$('#topWrap .top .enter-list li .secondary-menu').css('display','none');
 	})
 }
-showQrCode();
+showEnterEnroll();
+
 /*导航*/
 function navHover(){
 	$('#navWrap .nav ul li:nth-child(1) a').addClass('active');

@@ -766,3 +766,206 @@
 		}
 	}
 }
+/*好物推荐版块*/
+#recommendWrap{
+    width: $WidthWrap;
+    height: 564px;
+    #recommend{
+        width: $Width;
+        height: 564px;
+        margin: 0 auto;
+        position: relative;
+        h2{
+            height: 35px;
+            font-size: 12px;
+            color: #c7c8c2;
+            padding-top: 33px;
+            span{
+                font-size: 16px;
+                border-left: 6px solid #000;
+                color: #000;
+                padding: 0px 20px 0px 12px;
+            }
+        }
+        ul{
+            li{
+                float: left;
+                margin: 0px 4px 13px;
+                position: relative; 
+                &:hover{
+                    opacity: 0.8;
+                }
+                &:hover .recommend-txt{
+                    opacity: 0.8;
+                }
+                a{
+                    display: block;
+                    width: 236px;
+                    height: 236px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .recommend-txt{
+                    width: 236px;
+                    height: 33px;
+                    background: #000;
+                    opacity: 0.3;
+                    position: absolute;
+                    bottom: 0px;
+                    text-align: center;
+                    line-height: 33px;
+                    color: #68696e;
+                }
+            }
+        }
+        @mixin recommendBtn{
+            position: absolute;
+            font-size: 34px;
+            color: #1d1d1b;
+            top: 315px;
+            font-weight: bold;
+            font-family: "黑体";
+            @content;
+        }
+        #recommendLeftBtn{
+            @include recommendBtn{
+                left: -20px;
+            }
+        }
+        #recommendRightBtn{
+            @include recommendBtn{
+                right: -20px;
+            }
+        }
+    }
+}
+/*猜你喜欢版块*/
+#relatedWrap{
+    width: $WidthWrap;
+    min-height: 240px;
+    #related{
+        width: $Width;
+        min-height: 240px;
+        margin: 0 auto;
+        h2{
+            border-left: 6px solid #000;
+            padding-left: 12px;
+            margin: 22px 0px 20px;
+        }
+        .related-top{
+            min-height: 58px;
+            border-bottom: 2px dotted #cdcdcd;
+            a{
+                width: 130px;
+                height: 130px;
+                float: left;
+                margin: 0px 5px 25px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .related-bottom{
+            height: 120px;
+            border-bottom: 2px dotted #cdcdcd;
+            margin-bottom: 26px;
+            padding: 15px 0px 17px;
+            .related-bottom-left{
+                height: 104px;
+                width: 290px;
+                margin-right: 9px;
+                border-right: 1px solid #d9d9d9;
+                float: left;
+                padding: 13px 0px 0px 20px;
+                p{
+                    height: 26px;
+                    line-height: 26px;
+                    a{
+                        text-decoration: underline;
+                        color: #000;
+                    }
+                }
+            }
+            .related-bottom-center{
+                height: 120px;
+                width: 276px;
+                margin-right: 9px;
+                border-right: 1px solid #d9d9d9;
+                float: left;
+                padding-left: 29px;
+                .related-bottom-center-left{
+                    width: 118px;
+                    padding-top: 13px;
+                    float: left;
+                    p{
+                        height: 49px;
+                        @mixin related-bottom-center-left-p-span{
+                            width: 30px;
+                            height: 30px;
+                            float: left;
+                            background: url(../img/pc_new_icon.png) no-repeat;
+                            margin-right: 9px;
+                            @content;
+                        }
+                        .related-bottom-center-left-p-span-1{
+                            @include related-bottom-center-left-p-span{
+                                background-position: -270px -107px;
+                            }
+                        }
+                        .related-bottom-center-left-p-span-2{
+                            @include related-bottom-center-left-p-span{
+                                background-position: -270px -146px;
+                            }
+                        }
+                        a{
+                           line-height: 30px; 
+                           color: #000;
+                        }
+                    } 
+                }
+                .related-bottom-center-right{
+                    margin-top: 19px;
+                }
+            }
+            .related-bottom-right{
+                height: 115px;
+                width: 344px;
+                float: left;
+                padding-top: 5px;
+                p{
+                    line-height: 26px;
+                    padding-left: 21px;
+                }
+            }
+        }
+    }
+}
+/*固定定位*/
+#backTop{
+    display: block;
+    width: 53px;
+    height: 153px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    margin-right: 130px;
+    img{
+        position: absolute;
+    }
+    img:nth-child(1){
+        width: 29px;
+        height: 100px;
+        left: 24px;
+    }
+    img:nth-child(2){
+        left: 12px;
+        width: 53px;
+        height: 53px;
+        bottom: 0px;
+        right: 0px;
+    }
+}

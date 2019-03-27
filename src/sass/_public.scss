@@ -7,16 +7,17 @@
         width: $Width;
         height: 45px;
         margin: 0 auto;
+        position: relative;
         h1{
             line-height: 45px;
             float: left;
         }
-        ul{
+        .enter-list{
             float: right;
-            position: relative;
             li{
                 float: left;
                 color: #213220;
+                position: relative;
                 a{
                     padding: 0 16px;
                     line-height: 45px;
@@ -31,12 +32,31 @@
                 .top-ul-li-a-first{
                     display: none;
                 }
-                .top-ul-li-a-3{
+                .top-ul-li-a-7{
                     color: #efcd38;
                 }
                 .top-ul-li-a-last{
                     padding-right: 21px;
                     line-height: 43px;
+                }
+                .secondary-menu{
+                    position: absolute;
+                    top: 45px;
+                    left: 0px;
+                    width: 62px;
+                    height: 0px;
+                    background: #000;
+                    text-align: center;
+                    z-index: 100;
+                    display: none;
+                    li{
+                        float: none;
+                        a{
+                            color: #fff; 
+                            padding: 0;
+                            line-height: 26px;  
+                        }
+                    }
                 }
             }
             .top-ul-li-last{
@@ -116,6 +136,93 @@
                 color: #d2d2d2;
                 font-size: 20px !important;
             } 
+        }
+    }
+}
+/*首页底部*/
+#bottomWrap{
+    width: $WidthWrap;
+    height: 280px;
+    background: #000;
+    #bottom{
+        width: 970px;
+        height: 280px;
+        margin: 0 auto;
+        padding-left: 10px;
+        position: relative;
+        p{
+            width: 100%;
+            height: 76px;
+            font-size: 16px;
+            padding-top: 29px;
+            position: relative;
+            color: #f5fffe;
+            margin-bottom: 50px;
+            span{
+                font-size: 14px;
+                position: absolute;
+                bottom: 0px;
+                right: 237px;
+            }
+        }
+        .bottom-ul-1{
+            height: 27px;
+            width: 740px;
+            border-bottom: 1px solid #58585a;
+            padding-top: 10px;
+            li{
+                float: left;
+                padding-right: 20px;
+                line-height: 20px;
+                color: #62615f;
+                a{
+                    color: #62615f;  
+                }
+                i{
+                    float: left;
+                    height: 28px;
+                    background: url(../img/ico_common.png) no-repeat;
+                    background-position: -224px -5944px;
+                    width: 23px;
+                }
+            }
+            li:nth-child(2){
+                i{
+                    background-position: -224px -5976px; 
+                    width: 18px;
+                }
+            }
+            li:nth-child(3){
+                i{
+                    background-position: -224px -6016px;
+                    width: 33px; 
+                }
+            }
+        }
+        .bottom-ul-2{
+            height: 28px;
+            line-height: 28px;
+            li{
+                float: left;
+                a{
+                    padding: 0px 14px 0px 10px;
+                    color: #62615f;
+                }
+            }
+        }
+        .bottom-a-1{
+            display: block;
+            margin-left: 272px;
+            color: #62615f;
+        }
+        .bottom-a-2{
+            display: block;
+            margin-left: 330px;
+        }
+        .bottom-a-3{
+            position: absolute;
+            top: 105px;
+            left: 813px;
         }
     }
 }

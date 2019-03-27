@@ -1,0 +1,166 @@
+@charset 'utf-8';
+@import '_common';
+@import '_public';
+#listCaseWrap{
+    width: $WidthWrap;
+    height: 31px;
+    #listCase{
+        width: $Width;
+        height: 30px;
+        border-top: 1px solid #c2c2c2;
+        background: #f6f6f6;
+        margin: 0 auto;
+        .listCase-left{
+            float: left;
+            li{
+                float: left;
+                line-height: 30px;
+                a{
+                    padding-right: 24px;
+                    color: #000;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            li:nth-child(1){
+                font-weight: bold;
+                height: 30px;
+            }
+        }
+        .listCase-right{
+            float: right;
+            li{
+                float: left;
+                line-height: 30px;
+                a{
+                    padding: 0px 12px;
+                    color: #000; 
+                    border-right: 1px solid #000;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            li:nth-child(2) a{
+                border: 0;
+            }
+            li:nth-child(1) a{
+                font-weight: bold;
+            }
+        }
+    }
+}
+/*main版块*/
+#centerWrap{
+    width: $WidthWrap;
+    min-height: 261px;
+    #center{
+        width: $Width;
+        min-height: 237px;
+        margin: 0 auto;
+        padding-top: 24px;
+        .center-main{
+            width: $Width;
+            min-height: 237px;
+            .center-main-left{
+                width: 235px;
+                height: 260px;
+                float: left;
+                .center-main-left-left{
+                    float: left;
+                    width: 133px;
+                    a{
+                        float: left;
+                        width: 120px;
+                        height: 120px;
+                        border: 1px solid #b9b9b9;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        &:hover img{
+                            opacity: 0.8;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .center-main-left-right{
+                    width: 102px;
+                    overflow: hidden;
+                    float: left;
+                    a:nth-child(1){
+                        width: 100%;
+                        height: 24px;
+                        line-height: 24px;
+                        color: #000; 
+                    }
+                    p:nth-child(2){
+                        width: 84px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-bottom: 24px;
+                    }
+                    h2:nth-child(3){
+                        font-size: 12px;
+                        margin-bottom: 26px;
+                        i{
+                            float: left;
+                            width: 17px;
+                            height: 15px;
+                        }
+                    }
+                    a:nth-child(4){
+                        display: block;
+                        width: 49px;
+                        height: 19px;
+                        background: #000;
+                        color: #fff;
+                        border: 1px solid #5a5a5a;
+                        line-height: 19px;
+                        text-align: center;
+                    }
+                }
+            }
+            .center-main-right{
+                width: 745px;
+                height: 260px;
+                float: left;
+                a{
+                    width: 236px;
+                    height: 236px;
+                    position: relative;
+                    float: left;
+                    margin-left: 12px;
+                    &:hover p{
+                        background: #000;
+                        color: #fff;  
+                        opacity: 0.9;
+                    }
+                    &:hover img{
+                        opacity: 0.9; 
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    p{
+                        position: absolute;
+                        width: 236px;
+                        height: 31px;
+                        bottom: 0px;
+                        color: #616767;
+                        text-align: center;
+                        line-height: 31px;
+                        background: #ccc;
+                        opacity: 0.5;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
